@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: FZLTHJW;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+img{
+    max-width: 100%;
+}
+.banner-container{
+    position: relative;
+    background: url('image/banner-bg.jpg') no-repeat;
+    background-size: auto;
+    height: 469px;
+    background-position: center center;
+    min-width: 1076px;
+    text-align:center; 
+    font-size: 0;
+}
+.logo-container{
+    position:absolute;   
+}
+.logo-img{   
+    position: relative;
+    top: 20px;
+    left: -112px; 
+}
+.banner-title{
+    display: inline-block;
+    width: 712px;
+    height: 345px;
+    background: url('image/banner-pic.png') no-repeat;
+    background-size: contain;
+    background-position:center;
+    margin: 66px 0 46px;
+    
+}
+.mainer-container::before{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 1076px;
+    height: 19px;
+    background: url('image/mainer-border.png') no-repeat;
+    margin: 0 auto;
+}
+.mainer-container{
+    position: relative;
+    width: 1000px;
+    border: 6px solid #E2E2E2;
+    margin: 0 auto;
+}
+.active-container,.teacher-container,.message-active{
+    position: relative;
+    text-align: center;
+}
+.active-container{
+    padding: 95px 104px 83px;
+    border-bottom: 6px dashed #F7F7F7;
+}
+.active-sutitle{
+    line-height: 35px;
+    font-size: 30px;
+    font-weight: normal; 
+    margin-bottom: 31px;  
+}
+.title-container{
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    top:31px;
+    left: 26px;
+}
+.nav-container{
+    position: absolute;
+    top:303px ;
+    right: -108px;
+    border: 1px solid #E2E2E2;
+}
+.nav-container::before{
+    position: absolute; 
+    content: "";
+    top:-33px ;
+    left: -21px;
+    width: 113px;
+    height: 33px;
+    background: url('image/nav-before-bg.png') no-repeat;
+}
+.nav-container::after{
+    position: absolute; 
+    content: "";
+    bottom:-33px ;
+    left: 1px;
+    width: 113px;
+    height: 33px;
+    background: url('image/nav-after-bg.png') no-repeat;
+}
+.nav-list{
+    display: block;
+    list-style: none;
+    text-align: center;
+    
+}
+.nav-list li{
+    display: block;
+    width: 80px;
+    padding: 24px 12px;
+    line-height: 14px;
+}
+.nav-list li:not(.nav-list li:last-child){
+    border-bottom: 1px solid #e2e2e2;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.nav-list a:hover,.nav-list .a-click{
+    color: red;
+}
+.teacher-container{
+    background: #F7F7F7;
+}
+.teacher-banner{
+    padding: 72px 0 71px 96px;
+}
+.teacher-list{
+    position: relative;
+}
+.subsection{
+    width: 512px;  
+    text-align: justify; 
+    letter-spacing:-0.3px ;  
+}
+.lesson-container{
+    position: absolute;
+    display:inline-block;
+    top:32px;
+    right:59px;
+}
+.sutitle-container{
+    text-align: left;
+}
+.subtitle-icon{
+    width: 42px;
+    float: left;
+    margin:0 26px 0 29px;
+}
+.honor-name{
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.sutitle-container>p{
+    color: #333333;
+}
+.teacher-card-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 39px 27px;
+}
+.teacher-card-item{
+    font-size: 0;
+    width: 290px;
+    height: 212px;
+    background: url('image/card-bg.png') no-repeat;
+}
+.lesson .lesson-teacher .teacher-card-item:nth-child(2),.lesson .quantity-teacher  .teacher-card-item:nth-child(1){
+    background:none;
+}
+.teacher-avatar{
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 13px 0 20px;
+}
+.teacher-name{
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+.teacher-info{
+    margin: 10px 11px 17px 16px;
+    height: 54px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+.lesson.teacher-container::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:951px;
+    height: 15px;
+    z-index: 1;
+    background: url('image/cborder.png') no-repeat;
+}
+.answer-teacher{
+    padding-bottom: 33px;
+}
+.footnote{
+    position: absolute;
+    display: inline-block;
+    width: 182px;
+    right:37px;
+    z-index: 1;
+    text-align: right;
+    bottom: 20px;
+    color: #666;
+    font-size: 14px;
+    height: 31px;
+    line-height: 16px;
+
+}
+.message-container{
+    border-top: 6px dashed #F7F7F7;
+}
+.message-active-sutitle{
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 35px;
+    padding: 37px 0 0;
+}
+.message-active-content{
+    display:flex;
+    justify-content: space-between;
+    padding:15px 30px 26px 96px;
+}
+.message-active-demo{
+    display: block;
+    text-align: justify;
+    width: 351px;
+    font-size: 14px;
+    height: 94px;
+    text-decoration: underline;
+}
+.message-active-rule{
+    display: flex;
+    font-size: 12px;
+    text-align: left;
+    width: 351px;
+    align-items: flex-start;
+}
+.message-active-ddl{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    padding: 22px 0 8px;
+}
+.message-active-rule>span{
+    width: 113px;
+    line-height: 16px;
+}
+ol{
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 16px;
+}
+.prize-img{
+    display: block;
+    font-size: 0;
+}
+.prize-img>img{
+    display: block;
+}
+.prize-info{
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    padding:15px 0 0 10px;   
+}
+.message-input-container{
+    position: relative;
+    font-size: 0;
+    padding: 0 92px 0 97px;
+    display: flex;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    padding:11px;
+    text-align: justify;
+}
+.message-input{
+    width: 650px;
+    height: 86px;
+    position: relative;
+    display: inline-block;
+    background: rgba(101, 177, 217, 0);
+    border: 1px solid #DBDBDB;
+}
+.textarea-bg1{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: url('image/textarea_bg_1.png') no-repeat;
+}
+.textarea-bg2{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    background: url('image/textarea_bg_2.png') no-repeat;
+}
+.message-submit{
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+    height: 86px;
+    padding: 23px 42px;
+    background: linear-gradient(0deg,#EBEBEB,#FAFAFA);
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #DBDBDB;
+    border-left: none;
+
+}
+.str-length{
+    position: absolute;
+    display: inline-block;
+    bottom: -26px;
+    left: 50%;
+    font-size: 14px;
+}
+.messageboard-container{ 
+    position: relative; 
+    height: 580px;
+    padding: 30px;
+}
+.messageboard-container::after{
+    position: absolute;
+    background: url(image/banner-mountain.png) no-repeat;
+    content: "";
+    display: inline-block;
+    right: 0;
+    bottom:-13px;
+    width: 495px;
+    height: 247px;
+    background-position: bottom;
+    /* opacity: 0.2; */
+
+}
+.card-item{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 320px;
+    height: 160px;
+    background: linear-gradient(180deg,rgba(0,0,0,0) 98%,rgba(0,0,0,0) 1px,rgba(213, 214, 234, 0.9) 1px); 
+    background-color: #F0F5ff ;
+    background-size: 100% 1.7em;
+    padding: 20px 18px 46px;
+    border: 1px solid rgba(213, 214, 234, 0.9);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.card-item::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    background: url('image/message_bg_left.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.card-item::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    background: url('image/message_bg_right.png') no-repeat;
+    background-size: contain;
+}
+.delete-message{
+    display: none;
+    position: absolute;
+    width: 21px;
+    right: 0;
+    top: -26px;
+    z-index: 999;
+}
+.card-item:hover .delete-message{
+    display: block;
+}
+.user-name{
+
+    padding-bottom: 11px;
+}
+.user-message{
+    z-index: 0;
+    font-size: 14px;
+    text-align: justify; 
+}
+
+.mainer-container::after{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 1076px;
+    height: 19px;
+    background: url('image/mainer-border.png') no-repeat;
+    margin: 0 auto;
+}
+.footer-container{
+    margin:55px 0 47px;
+    text-align: center;
+}
+.footer-contact{
+    font-size: 12px;
+}
